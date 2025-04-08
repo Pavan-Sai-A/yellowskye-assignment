@@ -17,7 +17,7 @@ const tabMapping = {
   video: "videos",
 } as const;
 
-export default function ProjectDetail() {
+const ProjectDetail = () => {
   const { id } = useParams();
   const router = useRouter();
   const [activeTab, setActiveTab] = useState<TabType>("image");
@@ -118,4 +118,5 @@ export default function ProjectDetail() {
       </div>
     </div>
   );
-}
+};
+export default ProjectDetail;

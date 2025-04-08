@@ -4,7 +4,7 @@ import { useState } from "react";
 import { sampleProjects } from "@/lib/sampleData";
 import ProjectCard from "@/components/ProjectCard";
 
-export default function ProjectsPage() {
+const ProjectsPage = () => {
   const [query, setQuery] = useState("");
 
   const filteredProjects = sampleProjects.filter((project) =>
@@ -53,4 +53,5 @@ export default function ProjectsPage() {
       )}
     </div>
   );
-}
+};
+export default ProjectsPage;

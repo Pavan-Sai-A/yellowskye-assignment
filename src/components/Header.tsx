@@ -5,9 +5,9 @@ import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "./fireBase";
 import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
-import { NavItem } from "./common/NavItems";
+import NavItem from "./common/NavItems";
 
-export default function Header() {
+const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -82,4 +82,6 @@ export default function Header() {
       </nav>
     </header>
   );
-}
+};
+
+export default Header;

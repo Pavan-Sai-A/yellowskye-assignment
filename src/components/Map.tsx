@@ -13,7 +13,7 @@ import { fromLonLat } from "ol/proj";
 import { useRouter } from "next/navigation";
 import { sampleProjects } from "@/lib/sampleData";
 
-export default function ProjectMap() {
+const ProjectMap = () => {
   const mapRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
 
@@ -96,4 +96,5 @@ export default function ProjectMap() {
       </div>
     </div>
   );
-}
+};
+export default ProjectMap;

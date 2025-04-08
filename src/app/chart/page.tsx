@@ -1,10 +1,9 @@
 "use client";
 
-import dynamic from "next/dynamic";
-const SampleLineChart = dynamic(() => import("@/components/LineChart"), {
-  ssr: false,
-});
+import SampleLineChart from "@/components/LineChart";
 
-export default function ChartsPage() {
+const ChartsPage = () => {
   return <SampleLineChart />;
-}
+};
+
+export default ChartsPage;

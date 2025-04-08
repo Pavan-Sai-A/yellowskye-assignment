@@ -17,11 +17,7 @@ interface ProjectMapProps {
   className?: string;
 }
 
-export default function MapComponent({
-  lat,
-  lon,
-  className = "",
-}: ProjectMapProps) {
+const MapComponent = ({ lat, lon, className = "" }: ProjectMapProps) => {
   const mapRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -69,4 +65,5 @@ export default function MapComponent({
       className={`rounded-lg border border-gray-200 overflow-hidden ${className}`}
     />
   );
-}
+};
+export default MapComponent;

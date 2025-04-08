@@ -12,7 +12,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-export default function SampleLineChart() {
+const SampleLineChart = () => {
   const [data, setData] = useState<{ name: string; value: number }[]>([]);
 
   useEffect(() => {
@@ -86,4 +86,5 @@ export default function SampleLineChart() {
       )}
     </div>
   );
-}
+};
+export default SampleLineChart;

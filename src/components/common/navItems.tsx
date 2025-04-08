@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export function NavItem({
+const NavItem = ({
   href,
   pathname,
   label,
@@ -8,7 +8,7 @@ export function NavItem({
   href: string;
   pathname: string;
   label: string;
-}>) {
+}>) => {
   const isActive = pathname === href;
 
   return (
@@ -21,4 +21,5 @@ export function NavItem({
       {label}
     </Link>
   );
-}
+};
+export default NavItem;

@@ -10,12 +10,12 @@ interface MediaItemProps {
   readonly title?: string;
 }
 
-export default function MediaItem({
+const MediaItem = ({
   type,
   src,
   alt = "Media",
   title = "Media",
-}: MediaItemProps) {
+}: MediaItemProps) => {
   const [imageError, setImageError] = useState(false);
 
   return (
@@ -44,4 +44,5 @@ export default function MediaItem({
       )}
     </div>
   );
-}
+};
+export default MediaItem;
