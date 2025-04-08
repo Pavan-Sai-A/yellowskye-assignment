@@ -5,7 +5,7 @@ import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "./fireBase";
 import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
-import NavItem from "./common/NavItems";
+import NavItem from "./common/Navitems";
 
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
